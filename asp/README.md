@@ -1,7 +1,7 @@
 # Sample asp Implementation for service http://captchas.net
 
 ## Usage
-We are providing a ASP module to simplify the task of writing a web application using captchas.net. It is named CaptchasDotNet.asp. To use it, simply copy it into the directory with the ASP-scripts using it. Also you have to download the JavaScript MD5 implementation file md5.js from Paul Johnston and place it in the same directory.
+We are providing a ASP module to simplify the task of writing a web application using captchas.net. It is named CaptchasDotNet.asp. To use it, simply copy it into the directory with the ASP-scripts using it. Also you have to download the JavaScript MD5 implementation file md5.js from Paul Johnston (http://pajhome.org.uk/crypt/md5/) and place it in the same directory.
 
 ### query
 In general the process of using CAPTCHA can be divided into two stages. First you have to query the user for the CAPTCHA, on that page you also usually let the user input the data, which has to be protected, e.g. blog entries.
