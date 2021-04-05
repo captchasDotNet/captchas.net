@@ -2,30 +2,13 @@
 //
 // PHP module for easy utilization of the free captchas.net CAPTCHA service
 //
-// For documentation look at http://captchas.net/sample/php/
+// For documentation look at http://captchas.net/
+//                           https://github.com/captchasDotNet/captchas.net
 //
 // Written by
 //   Sebastian Wilhelmi <seppi@seppi.de> and
 //   Felix Holderied <felix@holderied.de>
 // This file is in the public domain.
-//
-// ChangeLog:
-//
-// 2014-04-27: Fixed missing initialization 
-//
-// 2011-04-25: Added function captchas_image_reload
-//
-// 2011-03-08: Added color option (Alfred Vink)
-//
-// 2006-08-16: New optional features integrated
-//
-// 2006-03-01: Only delete the random string from the repository in
-//             case of a successful verification.
-//
-// 2006-02-14: Add new image() method returning an HTML/JavaScript
-//             snippet providing a fault tolerant service.
-//
-// 2005-06-02: Initial version.
 //
 
 class CaptchasDotNet
@@ -58,7 +41,7 @@ class CaptchasDotNet
     // The random string shall consist of small letters, big letters
     // and digits.
     $letters = "abcdefghijklmnopqrstuvwxyz";
-    $letters .= strtoupper ($letters) + "0123456789";
+    $letters .= strtoupper ($letters) . "0123456789";
 
     // The random starts out empty, then 40 random possible characters
     // are appended.
