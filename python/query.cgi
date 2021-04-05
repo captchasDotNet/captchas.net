@@ -45,7 +45,7 @@ print '''
       <tr>
         <td>
           <input type="hidden" name="random" value="%s" />
-          Your message:</td><td><input name="message" size="60" />
+          Your message:</td><td><input name="message" value="Hello World" size="60" />
         </td>
       </tr>
       <tr>
