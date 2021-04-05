@@ -3,6 +3,8 @@
 Our perl sample is based on a module kindly published by Geoffrey Young (https://metacpan.org/author/GEOFF) on CPAN.
 The original version (https://metacpan.org/release/WebService-CaptchasDotNet) don't use optional parameters alphabet, letters, width and height. If you want to upgrade, you have to uninstall the old module.
 
+See how it works on http://captchas.net/sample/perl/query.cgi
+
 ## Usage
 To use it drop the file WebService/CaptchasDotNet.pm into a new subdirectory WebService in the directory containing the files using the module.
 
