@@ -13,7 +13,7 @@
 
 class CaptchasDotNet
 {
-  function CaptchasDotNet ($client, $secret,
+  function __construct($client, $secret,
                            $random_repository = '/tmp/captchasnet-random-strings',
                            $cleanup_time      = 3600,
                            $alphabet          = 'abcdefghijklmnopqrstuvwxyz',
