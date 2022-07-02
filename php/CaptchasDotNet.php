@@ -48,7 +48,7 @@ class CaptchasDotNet
     $random_string = '';
     for ($i = 0; $i < 40; $i++)
     {
-      $random_string .= $letters{rand (0, strlen ($letters) - 1)};
+      $random_string .= $letters[rand (0, strlen ($letters) - 1)];
     }
 
     // Return the random string.
