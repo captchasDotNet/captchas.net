@@ -14,14 +14,13 @@
 class CaptchasDotNet
 {
   function __construct($client, $secret,
-                           $random_repository = '/tmp/captchasnet-random-strings',
-                           $cleanup_time      = 3600,
-                           $alphabet          = 'abcdefghijklmnopqrstuvwxyz',
-                           $letters           = 6,
-                           $width             = 240,
-                           $height            = 80,
-                           $color             = '000000'
-                           )
+                       $random_repository = '/tmp/captchasnet-random-strings',
+                       $cleanup_time      = 3600,
+                       $alphabet          = 'abcdefghijklmnopqrstuvwxyz',
+                       $letters           = 6,
+                       $width             = 240,
+                       $height            = 80,
+                       $color             = '000000')
   {
     $this->__client = $client;
     $this->__secret = $secret;
@@ -308,5 +307,3 @@ EOT;
   }
 
 }
-
-?>
