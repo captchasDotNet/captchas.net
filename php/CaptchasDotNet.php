@@ -13,15 +13,14 @@
 
 class CaptchasDotNet
 {
-  function CaptchasDotNet ($client, $secret,
-                           $random_repository = '/tmp/captchasnet-random-strings',
-                           $cleanup_time      = 3600,
-                           $alphabet          = 'abcdefghijklmnopqrstuvwxyz',
-                           $letters           = 6,
-                           $width             = 240,
-                           $height            = 80,
-                           $color             = '000000'
-                           )
+  function __construct($client, $secret,
+                       $random_repository = '/tmp/captchasnet-random-strings',
+                       $cleanup_time      = 3600,
+                       $alphabet          = 'abcdefghijklmnopqrstuvwxyz',
+                       $letters           = 6,
+                       $width             = 240,
+                       $height            = 80,
+                       $color             = '000000')
   {
     $this->__client = $client;
     $this->__secret = $secret;
@@ -48,7 +47,7 @@ class CaptchasDotNet
     $random_string = '';
     for ($i = 0; $i < 40; $i++)
     {
-      $random_string .= $letters{rand (0, strlen ($letters) - 1)};
+      $random_string .= $letters[rand (0, strlen ($letters) - 1)];
     }
 
     // Return the random string.
@@ -308,5 +307,3 @@ EOT;
   }
 
 }
-
-?>
